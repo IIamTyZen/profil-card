@@ -20,8 +20,8 @@
 
 ### Links
 
-- Solution URL: [https://github.com/IIamTyZen/order-summary](https://github.com/IIamTyZen/order-summary)
-- Live Site URL: [https://iiamtyzen.github.io/order-summary/](https://iiamtyzen.github.io/order-summary/)
+- Solution URL: [https://github.com/IIamTyZen/profil-card](https://github.com/IIamTyZen/profil-card)
+- Live Site URL: [https://profil-card-murex.vercel.app/](https://profil-card-murex.vercel.app/)
 
 ## My process
 
