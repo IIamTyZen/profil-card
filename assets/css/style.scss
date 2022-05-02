@@ -1,0 +1,165 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+//color
+
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+// font size & weight
+$body-font: 'Kumbh Sans', sans-serif;
+$normal-font-size: 18px;
+$font-medium: 400;
+$font-bold: 700;
+
+// Base
+
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+//=============== ~ =============== // 
+
+body{
+    background: $dark-cyan;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before{
+        content: '';
+        background: url(/assets/img/bg-pattern-top.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top right;
+        position: absolute;
+        top: -40%;
+        right: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        mix-blend-mode: screen;
+        z-index: -99;
+    }
+
+    &::after{
+        content: '';
+        background: url(/assets/img/bg-pattern-bottom.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        position: absolute;
+        bottom: -45%;
+        right: 0%;
+        left: 50%;
+        width: 50vw;
+        height: 100vh;
+        mix-blend-mode: screen;
+        z-index: -99;
+    }
+
+    main section.card-container{
+        background-color: #fff;
+        border-radius: 18px;
+        display: block;
+        text-align: center;
+        box-shadow: 1px 8px 20px 0px #8d8d8d;
+        width: 400px;
+        box-sizing: border-box;
+        overflow: hidden;
+        font-family: $body-font;
+
+        @media screen and (max-width: 425px){
+            width: 350px;
+        }
+
+        @media screen and (max-width: 350px){
+            width: 300px;
+        }
+
+        .card-bg{
+            img{
+                border-radius: 18px 18px 0 0;
+                width: 100%;
+                background-size: contain;
+            }
+        }
+
+        .profil-card{
+            img{
+                margin-top: -65px;
+                width: 30%;
+                border-radius: 50%;
+                border: 5px solid #fff;
+            }
+
+            .name{
+                padding: 1rem;
+                color: $very-dark-desaturated-blue;
+
+                h1{
+                    font-size: 1.3rem;
+                    font-weight: $font-bold;
+                }
+
+                h1::after{
+                    content: '26';
+                    margin-left: 10px;
+                    color: $dark-grayish-blue;
+                    font-weight: $font-medium;
+
+                }
+
+                p{
+                    padding: 1rem 0;
+                    color: $dark-grayish-blue;
+                }
+            }
+
+            hr{
+                color: $dark-grayish-blue;
+            }
+
+            .profil-stats{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 25px;
+
+                h1{
+                    font-size: 1.2rem;
+                    color: $very-dark-desaturated-blue;
+                }
+
+                p{
+                    color: $dark-grayish-blue;
+                    font-weight: $font-medium;
+                }
+            }
+        }
+    }
+}
+

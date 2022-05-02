@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: #19a2ae;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body::before {
+  content: '';
+  background: url(/assets/img/bg-pattern-top.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: absolute;
+  top: -40%;
+  right: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  mix-blend-mode: screen;
+  z-index: -99;
+}
+
+body::after {
+  content: '';
+  background: url(/assets/img/bg-pattern-bottom.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: absolute;
+  bottom: -45%;
+  right: 0%;
+  left: 50%;
+  width: 50vw;
+  height: 100vh;
+  mix-blend-mode: screen;
+  z-index: -99;
+}
+
+body main section.card-container {
+  background-color: #fff;
+  border-radius: 18px;
+  display: block;
+  text-align: center;
+  -webkit-box-shadow: 1px 8px 20px 0px #8d8d8d;
+          box-shadow: 1px 8px 20px 0px #8d8d8d;
+  width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+@media screen and (max-width: 425px) {
+  body main section.card-container {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body main section.card-container {
+    width: 300px;
+  }
+}
+
+body main section.card-container .card-bg img {
+  border-radius: 18px 18px 0 0;
+  width: 100%;
+  background-size: contain;
+}
+
+body main section.card-container .profil-card img {
+  margin-top: -65px;
+  width: 30%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+body main section.card-container .profil-card .name {
+  padding: 1rem;
+  color: #2d3248;
+}
+
+body main section.card-container .profil-card .name h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+body main section.card-container .profil-card .name h1::after {
+  content: '26';
+  margin-left: 10px;
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+body main section.card-container .profil-card .name p {
+  padding: 1rem 0;
+  color: #6a6f81;
+}
+
+body main section.card-container .profil-card hr {
+  color: #6a6f81;
+}
+
+body main section.card-container .profil-card .profil-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+}
+
+body main section.card-container .profil-card .profil-stats h1 {
+  font-size: 1.2rem;
+  color: #2d3248;
+}
+
+body main section.card-container .profil-card .profil-stats p {
+  color: #6a6f81;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
